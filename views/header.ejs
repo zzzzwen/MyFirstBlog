@@ -13,6 +13,9 @@
 
 <nav>
 <span><a title="Home" href="/">home</a></span>
+<span><a title="存档" href="/archive">archive</a></span>
+<span><a title="标签" href="/tags">tags</a></span>
+<span><a title="友情链接" href="/links">links</a></span>
 <% if (user) { %>
   <span><a title="Upload" href="/upload">upload</a></span>
   <span><a title="Post" href="/post">post</a></span>
@@ -21,6 +24,7 @@
   <span><a title="Login" href="/login">login</a></span>
   <span><a title="Signup" href="/reg">register</a></span>
 <% } %>
+<span><form action="/search" method="GET"><input type="text" name="keyword" placeholder="SEARCH" class="search" /></form></span>
 </nav>
 
 <article>
